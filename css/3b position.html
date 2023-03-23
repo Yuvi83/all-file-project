@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css position</title>
+    <style>
+    .container{
+        height: 1000px;
+        width: 1600px;
+        border: 2px solid blue;
+        padding:10px;
+        
+    }
+    .pic{
+        height: 300px;
+        width: 200px;
+        border: 2px solid red;
+        margin: 5px;
+
+    }
+    /* position are used to make chart box.1)static=no change in image
+    2.)relative=image move from existing position left right top buttom.
+    3)absolute=beggining position of web.
+    4)fixed= up and down image but fixed image have fixed in the screen
+    5) sticky= it is just like fixed image but in this  case other images will be fixed and sticky image will be move up an down*/
+    #image2{
+        position:sticky;
+        left: 100px;
+        top: 200px;
+    }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="cat3.jpg" class="pic" id="image1">
+        <img src="deer1.jpg"class="pic" id="image2">
+        <img src="elephant1.jpg" class="pic" id="image3">
+        <img src="lion1.jpg" class="pic" id="image4">
+        <img src="nature3.jpg"class="pic" id="image5">
+        <img src="snake1.jpg" class="pic" id="image6">
+        <img src="tiger1.jpeg"class="pic" id="image7">
+    </div>
+    
+</body>
+</html>

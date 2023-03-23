@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      /*  descendent selector = this selector can select all the paragraph which include div tag(div p).
+      if we change (div p) to (div h3) then include only all h3 tag inside div tag
+      in this code descendent selector are style P1,P2,P3,P4,P7,P8 */
+      /* div p{
+            color:red;
+            font-size: 30px;
+        } */
+        /*child selectorthe child selector select all element that are the
+         children are specified amount. the child selector style in P1,P2,P3,P7,P8.*/
+
+      /*  div>p{
+            background-color: rgb(red, green, blue);
+            color: blue;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }*/
+        /* ADJACENT SIBLING SELECTOR= it is used to select an element that is directly after another specified element.
+        in this code (div p)so only select just after div tag paragraph so only style in this case in
+        PARAGRAPH5 but second div tag after section tag so section tag can not style.
+        */
+       /*div+p{
+            background-color: yellow;
+            color: green;
+            font-size: medium;
+        }*/
+        /* GENERAL SBBLIUNG SELECTOR = the general sibling selector select all 
+        element that are next sibling of aspecified element. in this code (div p)code so 
+        after div tag all paragraph will be style are P5,P6,P10,P11*/
+        div~p{
+            background-color: violet;
+            color: aliceblue;
+            font-style: italic;
+        }
+
+        
+    </style>
+    
+</head>
+<body>
+    <h1>css combinator</h1>
+    <p> paragraph 0.the descendent selector select all the element that are descendent </p>
+   <div>
+    <h2>1.Descensent selector</h2>
+    <p>paragraph 1 in the div</p>
+    <p>paragraph 2 in the div</p>
+ <section>
+      <p>paragraph 3 in the div</p></section>
+    <p>paragraph 4 in the div</p>
+    </div>
+    <p>paragraph 5 in not div</p>
+    <p>paragraph 6 in not div</p>
+<div>
+    <p>paragraph 7 in the div</p>
+    <h3> heading3 </h3>
+    <p>paragraph 8 in the div</p>
+</div>
+<section>
+    <p>paragraph 9 in section tag</p></section>
+
+    <p>paragraph 11 in not div</p>
+    <p>paragraph 10 in not div</p>
+
+
+    
+    
+</body>
+</html>

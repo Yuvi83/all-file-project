@@ -1,0 +1,55 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arithmetic Oprator</title>
+</head>
+<body>
+    <h3>Arithmetic Operator in Javasscript</h3>
+    <p id="demo1"></p>
+    <p id="demo2"></p>
+    <p id="demo3"></p>    
+    <p id="demo4"></p>
+    <p id="demo5"></p>
+    <p id="demo6"></p>
+    <p id="demo7"></p>
+    <p id="demo8"></p>
+    <p id="demo9"></p>
+    <p id="demo10"></p>
+
+    <script>
+        let a=10;
+        let b=20;
+        let c=a+b;//c=10+20=30  //addition
+        document.getElementById("demo1").innerHTML=c;
+        let d=c-15;     //d=30-15=15   //subtraction
+          document.getElementById("demo2").innerHTML=d;
+    let e=a*b;   //e=10*20=200   //multiply
+        document.getElementById("demo3").innerHTML=e
+        let f=e/d; // f=200/15=13.3333  //division
+        document.getElementById("demo4").innerHTML=f;
+        let h=b%d   // h=20%15=  //modulo
+        document.getElementById("demo5").innerHTML=h;
+
+
+        let i=a++   //a++=a+1 first take a=10 then increase plus 1 while ++a first increase plus 1 not take value of a; a=11
+        document.getElementById("demo6").innerHTML=i;
+        let j=++a  // in a++ a=11 so ++a output is 12.
+        document.getElementById("demo7").innerHTML=j;
+        
+        let k=--b;//b=20 so --b=19
+    
+        document.getElementById("demo8").innerHTML=k;
+        let l=b--  //b=19 b--=19
+        document.getElementById("demo9").innerHTML=l;
+
+
+       let m=a**2  //i=12*12=144  a=12
+       document.getElementById("demo10").innerHTML=m;
+</script>
+    
+</body>
+</html>

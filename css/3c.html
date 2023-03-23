@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css pseudo element</title>
+    <style>
+        h1::first-letter{
+            color: blue;
+            font-size: xxlarge;
+        }
+        #clr1{
+        height: 1000px;
+        background-image: linear-gradient( violet,indigo,blue,green,yellow,orange,red);
+
+    }
+    p{
+            height: 1500px;
+            background-image: linear-gradient(  red,yellow);
+        }
+    </style>
+</head>
+<body>
+    <div id="clr1"style="text-align: center;">Rainbow colors</div>
+    <h1>this is an example program</h1>
+    <p>Gradient colors</p>
+</body>
+</html>

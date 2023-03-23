@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image gallery</title>
+</head>
+<style>
+    h2{
+        background-color: brown;
+    }
+    .container{
+        margin-top: 5px;
+        margin-left: 5px;
+    }
+    .container ul{
+        color: blue;
+    }
+    .container ul li{ 
+        margin: 15px;
+        padding: 5px;
+        width: 350px;
+        height: 250px;
+        float: left;
+        border: 2px solid blue;
+        list-style-type:none;
+    }
+    .container ul li:hover{
+        border:1px solid red;
+        }
+        container ul li{
+            text-align: center;
+        }
+        .desc1{
+            text-align: center;
+            text-decoration-color: blue;
+            background-color:yellow;
+            margin-top: 5px;
+            padding: 5px;
+            font-weight: 10px;
+        }
+        .desc2{
+            text-align: center;
+            text-decoration-color: brown;
+            background-color: rgb(255, 247, 0);
+            margin-top: 5px;
+            padding: 5px;
+            font-weight: 10px;
+
+
+        }
+        .desc3{
+            text-align: center;
+            background-color: yellowgreen;
+            margin-top: 5px;
+            padding: 5px;
+            font-weight: 10px;
+
+
+        }
+        .desc4{
+            text-align: center;
+            background-color:yellow;
+            margin-top: 5px;
+            padding: 5px;
+            font-weight: 10px;
+
+
+        }
+        .desc5{
+            text-align: center;
+            background-color: yellow;
+            margin-top: 5px;
+            padding: 5px;
+            font-weight: 10px;
+
+
+        }
+</style>
+<body>
+    <h2 style="text-align:center ; color:blue">Image gallery website using Html and CSS</h2>
+    <div class="container"> 
+    <ul>
+
+
+        <li><a target="_blank"href="nature1.jpg">
+            <img src="nature1.jpg" height="250px"width="350px" alt="nature1"></a>
+            <div class="desc1">NATURE1 </div></li>
+
+        <li><a target="_self" href="nature3.jpg" >
+            <img src="nature3.jpg" height="250px"width="350px" alt="nature3"></a>
+            <div class="desc2">NATURE3 </div></li>
+
+        <li> <a target="_parent" href="tiger1.jpeg" >
+            <img src="tiger1.jpeg" height="250px"width="350px" alt="tiger1"></a>
+            <div class="desc3"> TIGER </div></li>
+
+
+        <li> <a href="lion1.jpg" target="_top">
+            <img src="lion1.jpg"height="250px"width="350px" alt="lion1"> </a>
+            <div class="desc4">LION </div></li>
+
+        <li> <a href="deer1.jpg" target="_self">
+            <img src="deer1.jpg" height="250px"width="350px"alt="deer1"></a>
+            <div class="desc5">DEER</div></li>
+
+    </ul>
+    </div>
+
+</body>
+</html>

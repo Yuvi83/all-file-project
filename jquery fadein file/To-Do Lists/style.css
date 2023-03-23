@@ -1,0 +1,21 @@
+body{
+    background-color: #85cf85;
+    font-family: 'Courier New', Courier, monospace;
+}
+#list-section {
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+#add{
+    background-color: blueviolet;
+    height: auto;
+    width: 100px;
+    border: 1px 8px;
+    border-radius: 5px;
+}
+#add:hover{
+    background-color: yellow;
+}
+/* homework for style to do list.*/

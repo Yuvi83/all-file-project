@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo classes</title>
+    <style>
+        a:link{color: blue;}
+        a:visited{color:red;}
+        a:hover{color:silver;}
+        a:active{color: yellow;}
+       input[type=text]{
+            width:100px;
+            transition: 0.5sec;
+        }
+        input[type=text]:focus{
+            background-color:blue;
+            width: 250px;
+        }
+        .intro1::first-letter{
+            color:blue;
+            font-size: xx-large;
+        }
+        .intro2::before{
+            background-color:yellow;
+            content:" -READ MORE-";
+        }
+        .intro3::after{
+            content:"-read more=>";
+            background-color: yellow;
+        }
+        .intro4::marker{
+            color:red;
+            font-size: 30px;
+        }
+       .intro5::selection{
+            background-color: yellow;
+        
+        }
+        
+
+    </style>
+</head>
+<body>
+    <a href="https://practically.com"><button>this is an example link</a></button>
+    <h1>the width property</h1>
+    <p>set the width of the input field to 100pixels. however when an</p>
+    search:<input type="text" name="search">
+    <h2 class="intro">css pseudo element</h2>
+    <p class="intro1">the first-letter pseudo element</p>
+    <p class="intro2">the before pseudo element.</p>
+    <p class="intro3">the after pseudo element</p>
+    <p class="intro4">the marker pseudo element </p>
+    <ul>
+        <li class="intro4">fruits</li>
+        <li class="intro4">vegetables</li>
+    </ul>
+    <p class="intro5">the selection pseudo element</p>
+    <ul>
+        <li class="intro5">fruits</li>
+        <li class="intro5">vegetables</li>
+        <li class="intro5">animals</li>
+    </ul>
+
+</body>
+</html>

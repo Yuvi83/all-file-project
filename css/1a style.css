@@ -1,0 +1,14 @@
+h3{
+    color: blue;
+    background-color: pink;
+}
+body{
+    background-color: red;
+}
+.name2{
+    color: yellow;
+    background-color: blue;
+}
+.name2:hover{
+    color: red;
+}

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Array</title>
+</head>
+<body>
+    <h2>sorting Arrays</h2>
+    <p id="demo1"></p>
+    <p id="demo2"></p>
+    <p id="demo3"></p>
+    <script>
+        const Gadgets=["Mobile","Laptop","Headphones","Smartwatch","Pc","Digital-camera","Alexa","Wireless-speaker"];
+        document.getElementById("demo1").innerHTML=Gadgets;
+        Gadgets.sort()
+        document.getElementById("demo2").innerHTML=Gadgets;
+        Gadgets.reverse()
+        document.getElementById("demo3").innerHTML=Gadgets;
+    </script>
+    <h2>remove last and first element of an array</h2>
+    <p id="demo4"></p>
+    <p id="demo5"></p>
+    <script>
+        var shopping =["apple","banana","carrot","pen","notebooks","pencil","shirts"];
+        shopping.pop();
+        shopping.reverse();
+        shopping.pop();
+        shopping.reverse();
+        document.getElementById("demo4").innerHTML=shopping;
+        var shopping =["apple","banana","carrot","pen","notebooks","pencil","shirts"];
+        shopping.pop()
+        shopping.reverse()
+        shopping.pop()
+        shopping.push("shirts");
+        shopping.reverse();
+        shopping.push("apple");
+        document.getElementById("demo5").innerHTML=shopping;
+    </script>
+    
+
+</body>
+</html>

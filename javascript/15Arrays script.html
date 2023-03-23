@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Arrays</title>
+
+</head>
+<body>
+    <h2>introduction</h2>
+    <p id="demo"></p>
+    <p id="demo2"></p>
+    <p id="demo3"></p>
+    <script>
+        const Gadgets=["mobile","laptop","headphones","smartwatch","pc",];
+        document.getElementById("demo").innerHTML=Gadgets[4];
+         //here give index number of array
+
+        // array updation or changing array element.
+
+        Gadgets[2]="Earphone"
+        Gadgets.pop()   
+                          //pop is used to delete last element 
+        document.getElementById("demo2").innerHTML=Gadgets;
+        Gadgets.push("headphone");
+                           //push is used to shift the elment in last position
+        document.getElementById("demo3").innerHTML=Gadgets;
+
+
+        
+
+        
+    </script>
+       <h2> convert array to string </h2>
+
+    <p id="intro"></p>
+    <script>
+        const fruits=["banana", "orange","apple","mango","grapes"];
+        document.getElementById("intro").innerHTML=fruits.toString();
+
+    </script>
+
+    
+</body>
+</html>

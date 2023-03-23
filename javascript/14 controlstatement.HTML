@@ -1,0 +1,76 @@
+<!--JAVASCRIPT IS CASE SENSTIVE CAPITAL LETTER AND SMAAL LETTER ARE DIFFERNT.-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IF Statement</title>
+</head>
+<body>
+    <h1>control statement</h1>
+    <h2>if statement</h2>
+    <script>
+        let age=16; //variable
+        if (age>18)
+        {
+            document.write("you are eligible for voting");
+        }
+        else{
+            document.write("sorry! you are not eligible for voting.");
+        }
+    </script>
+    <h2>ELse If Statement</h2>
+    <p id="time"></p>
+    <script>
+       const time = new Date().getHours();
+      //  const time=17;
+        let greeting;
+        if (time<10)
+        {
+            greeting="Good Morning"
+        }
+        else if (time<19){
+            greeting="Good Evening";
+        }
+        else{
+            greeting="Good Night";
+        }
+        document.getElementById("time").innerHTML=greeting;
+    </script>
+    <h2>Switch Statement</h2>
+    <p id="day"></p>
+    <script>
+        let day;
+       // switch(newdate.get day())
+       switch(6)
+        {
+            case 0:
+           day="Sunday"
+           break;
+           case 1:
+           day="Monday"
+           break;
+           case 2:
+           day="Tuesday"
+           break;
+           case 6:
+           day="wednesday";
+           break;
+           case 3:
+           day="Thursday";
+           break;
+           case 4:
+           day="Friday";
+           break;
+           case 5:
+           day="Saturday";
+           break;
+           default:
+            day="Looking forward to the weeekend";
+        }
+    document.getElementById("day").innerHTML=day;
+    </script>
+    
+</body>
+</html>

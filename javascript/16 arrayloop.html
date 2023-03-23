@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Arrays</title>
+</head>
+<body>
+   <p id="demo"></p>
+    <script>
+                const Gadgets=["mobile","laptop","headphones","smartwatch","pc","speaker"];
+                //let text="";   //empty string 
+                var text=""  ;
+                for(let i=0;i<Gadgets.length;i++){
+                    text+=Gadgets[i]+"<br>";
+                }
+                document.getElementById("demo").innerHTML=text;
+    </script>
+    <!--IF WE TAKE LET IN PLACE OF VAR DIFFERENT VALUE WILL BE ASSIGN-->
+    <h2>For IN Loops</h2>
+    <p id="demo2"></p>
+    <script>
+        
+        const person={firstname:"john",lastname:"doe",age:25};
+       let page = "";
+       
+        for(let x in person){
+           // page+=person[x];
+           page+=person[x] +"<br>";
+        }
+        document.getElementById("demo2").innerHTML=page;
+    </script>
+    
+</body>
+</html>

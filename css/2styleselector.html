@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css selector</title>
+    <style>  
+    /* h1,body,h2,h3,p,img are element selector.*/
+    h1{
+        color:black;
+        background-color: blue;
+    }
+      body{
+        background-color: yellow;
+      }
+        h2{
+            color: blue;
+            background-color: pink;
+
+        }
+        h3{
+            color: black;
+            background-color: red;
+        }
+        p{
+            color: blue;
+            background-color:pink;
+        }
+        img{
+            display:block;
+            margin-top: 10%;
+            margin-left: 20%;
+            transition: 0.7s;
+
+        }
+       /* #intro1,intro are id selector. */
+        #intro1{
+            color:red;
+            background-color: blue;
+        }
+        #intro{
+            color: red;
+            font-size: 20px;
+            background-color: blue;
+        }
+        /* .heading1 is a class selector */
+        .heading1{
+            color: brown;
+            background-color: pink;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        } 
+        /* (universal selector is used to select all the element in apage.)
+           * {
+              color:red;
+              background-color:yellow;
+            }*/
+            /*( the group selector is used to selct all the element with same style definion.
+                commas are used to seprate each selector in grouping)
+            h2,h3,p{ 
+                color:purple;
+                font-family: monospace;
+            }*/
+            h1::first-letter{
+                color: red;
+                font-size: 100px;
+            }
+            img:hover{
+                transform: scale(2.0);
+            }
+    </style>
+</head>
+<body>
+    <h1>css selector</h1>
+    <h2>css selector types</h2>
+    <h3>1.Element selector</h3>
+    <p>css are used to select the element to apply different style.</p>
+    <h3 id="intro1"> 2.ID selector(#)</h3>
+    <p id="intro">id selector are unique to give style in html files.</p>
+    <img src="D:\html files\nature2.jpg" alt="nature1">
+
+    <h3 class="heading1"> 3.class selector</h3>
+    <p class="heading1"> class are not unique ,class will be same for more han one.</p>
+</body>
+</html>

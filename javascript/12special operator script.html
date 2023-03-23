@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Special Operator</title>
+</head>
+<body>
+    <h2>in operator</h2>
+    <script>
+        const student ={name:'yuvraj',roll_no:92,grade:12};
+        document.write('name' in student); // in operator check the value is present or not.
+        // if value present then statement is true else false
+        delete student.name;
+        
+            ('name' in student == false)
+            {
+                student.name ='arjun';
+            }
+            document.write('<br>');
+            document.write(student.name);
+        
+    </script>
+    <h2>typeof operator</h2>
+    <script>
+        document.write('<br>');
+        document.write(typeof 42);
+        //expected output: number
+        document.write('<br>');
+        document.write(typeof 'apple');
+        //expected output:"string"
+        document.write('<br>');
+        document.write(typeof true);
+        //expected output:boolean
+        document.write('<br>');
+        document.write(typeof undeclaredvariable);
+        //expected output:"undefined"
+
+    </script>
+    
+</body>
+</html>
